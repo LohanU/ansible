@@ -5,7 +5,7 @@
     DURATION: "120HRS"
     TRAINER: "SIVA"
  
- 
+
   tasks: 
   - name: print the information
     ansible.builtin.debug:
