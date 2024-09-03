@@ -8,15 +8,19 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "Hello , I am learning {{COURSE}} Duration: {{DURATION}} Trainer: {{TRAINER}}"
+
+  tasks:
+  - name: print the information
+    vars: 
+      COURSE: "AWS"
+    ansible.builtin.debug:
+      msg: "Hello, I am learning {{COURSE}} Duration: {{DURATION}},Trainer: {{TRAINER}}"
+  
   tasks: 
-    - name: print the information
-      vars:  # task level vairables
-        COURSE: "Ansible"
-      ansible.builtin.debug:
-      msg: "Hello , I am learning {{COURSE}} Duration: {{DURATION}} Trainer: {{TRAINER}}"
-      
-  tasks: 
-   - name: print the information
+  - name: print the information
     ansible.builtin.debug:
       msg: "Hello , I am learning {{COURSE}} Duration: {{DURATION}} Trainer: {{TRAINER}}"
-      
+
+    
+
+    
