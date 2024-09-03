@@ -1,12 +1,12 @@
 - name: varibale from prompt
   hosts: web
   vars_prompt:
-  - name: COURSE
-    prompt: Please enter course name
-  - name: TRAINER
-    prompt: Please enter the trainer name
-  - name: DURATION
-    Prompt: Please enter Duration
+    - name: COURSE
+      prompt: Please enter course name
+    - name: TRAINER
+      prompt: Please enter the trainer name
+    - name: DURATION
+      Prompt: Please enter Duration
   tasks: 
   - name: Print course information
     ansible.builtin.debug:
