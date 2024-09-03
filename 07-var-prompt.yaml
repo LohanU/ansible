@@ -1,5 +1,6 @@
 - name: varibale from prompt
   hosts: web
+  
   vars_prompt:
   - name: COURSE
     prompt: Please enter the Course
