@@ -61,7 +61,7 @@
     vars: 
       myip_address: "150.24.20.4"
 
-    asible.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ myip_address | ansible.utils.ipv4}}" 
 
 
