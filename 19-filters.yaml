@@ -54,7 +54,7 @@
 
 
 
-  - name : check valid ip address
+  - name: check valid ip address
     vars:
       myip_address: "192.130.2.3"
     asible.builtin.debug:
