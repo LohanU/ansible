@@ -18,5 +18,11 @@
       greatings: "Hello Raja Ram"
     ansible.builtin.debug:
       msg: "{{ greatings | lower }}"
-      
+
+
+  - name: getting unique vales
+    vars: 
+      numbers: [1,4,6,2,1,2,3,2,3,4,1]
+    ansible.builtin.debug:
+      msg: " {{numbers | unique}} "
 
