@@ -12,3 +12,11 @@
       greatings: "Hello Raja Ram"
     ansible.builtin.debug:
       msg: "{{ greatings | upper }}"
+
+  - name: conver to lower case
+    vars: 
+      greatings: "Hello Raja Ram"
+    ansible.builtin.debug:
+      msg: "{{ greatings | lower }}"
+      
+
