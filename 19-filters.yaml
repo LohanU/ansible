@@ -59,7 +59,7 @@
 
   - name: check valid ip address
     vars: 
-      myip_address: "150.24.20.4"
+      myip_address: "350.24.20.4"
 
     ansible.builtin.debug:
       msg: "{{ myip_address | ansible.utils.ipv4}}" 
