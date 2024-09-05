@@ -53,11 +53,11 @@
 
 
 
-  - name : check valid ip address
-    vars:
-      myip_address: "192.130.2.3"
-    asible.builtin.debug:
-      msg: "{{ myip_address | ansible.utils.ipv4}}" 
+  # - name : check valid ip address
+  #   vars:
+  #     myip_address: "192.130.2.3"
+  #   asible.builtin.debug:
+  #     msg: "{{ myip_address | ansible.utils.ipv4}}" 
 
 
 
