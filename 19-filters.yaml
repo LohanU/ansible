@@ -1,4 +1,4 @@
-- name: demo on filters
+- name: loops demo
   hosts: local
   connections: local
   tasks:
