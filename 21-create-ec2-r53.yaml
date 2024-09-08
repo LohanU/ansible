@@ -34,7 +34,7 @@
       record: "{{ item.item }}.{{ zone }}" # mysql.lohanu.online
       type: A
       tt1: 1
-      value: "{{ item.instances[0].private.ip_address }}"
+      value: "{{ item.instances[0].private_ip_address }}"
       wait: true
       overwrite: true
     loop: "{{ ec2_instances.results }}"
